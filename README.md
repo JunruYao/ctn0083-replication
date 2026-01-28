@@ -35,7 +35,39 @@ The file should be placed at:
 
 Variable definitions follow the official NIDA data dictionary (`CTN0083-Data-Dictionary.xlsx`), which is also available on the NIDA study page.
 
+Due to NIDA data use restrictions, the raw dataset is not included in this repository. All results shown in `output/` and `figures/` were generated from this dataset and are provided for inspection.
+
 ---
+
+## Repository structure
+
+This repository is organized to mirror the logical flow of the replication, from data cleaning to the final analyses. The entire project is designed to run from start to finish using a single entry point (`run_all.R`), which calls each script in the correct order.
+
+The main components are:
+
+ctn0083_replication_repo/
+├── R/
+│   ├── 01_load_clean.R        # Load the raw data and construct the analytic sample (N = 254)
+│   ├── 02_table1.R            # Reproduce Table 1 (descriptive characteristics)
+│   ├── 03_primary_poisson.R   # Primary analysis: Poisson models, rates, and contrasts
+│   └── 04_secondary.R         # Secondary analysis: reproduce Appendix 3 p-values
+├── run_all.R                  # Run the full analysis pipeline
+├── SAP.docx                   # Statistical Analysis Plan
+├── README.md                  # Project overview and replication report
+├── data/
+│   └── CTN_FINAL.csv          # Final analysis-ready dataset (not tracked on GitHub)
+├── output/                    # All generated tables and numeric results
+│   ├── table1_replication.csv
+│   ├── table2_replication.csv
+│   ├── poisson_emm_wave1.csv
+│   ├── poisson_emm_wave2.csv
+│   ├── poisson_contrasts_wave1.csv
+│   ├── poisson_contrasts_wave2.csv
+│   └── secondary_results_appendix3.csv
+└── figures/                   # generated figure
+│   └── site_rates.png
+
+The analysis workflow is as follows. First, `01_load_clean.R` loads the dataset and constructs the analytic sample used in the manuscript. Then, `02_table1.R` produces the descriptive Table 1. Next, `03_primary_poisson.R` runs the main Poisson models and computes site-specific rates and contrasts. Finally, `04_secondary.R` reproduces all p-values reported in Appendix 3. The script `run_all.R` simply runs these steps in order and saves all generated tables and figures to the `output/` and `figures/` folders.
 
 ## Analytic sample definition (N = 254)
 
@@ -52,6 +84,8 @@ This results in an analytic sample of **N = 254**, with **177** participants ord
 ---
 
 ## Replicated Table 1
+
+This part of the analysis is implemented in `R/02_table1.R`.
 
 I reproduced the descriptive table of sociodemographic and behavioral characteristics in:
 
@@ -105,6 +139,8 @@ The resulting Table 1 matches the manuscript closely for most entries, including
 
 ## Primary analysis
 
+This part of the analysis is implemented in `R/03_primary_poisson.R`.
+
 I reproduced the manuscript’s primary analysis using Poisson regression models with a log link and an offset for the number of days each site was active.
 
 - For Wave 1, I compared Facebook, Google, and Grindr (70 days).
@@ -126,6 +162,8 @@ The detailed outputs are saved in:
 ---
 
 ## Secondary analysis
+
+This part of the analysis is implemented in `R/04_secondary.R`.
 
 For the secondary analysis, I attempted to reproduce all p-values reported in Appendix 3 of the manuscript. Using the public dataset together with the data dictionary, I reconstructed each group of variables and applied the same types of statistical tests as described in the paper:
 
@@ -172,6 +210,8 @@ source("run_all.R")
 ```
 
 All outputs will be written to the output/ and figures/ folders.
+
+Note: The `output/` and `figures/` folders in this repository already contain the results generated on my machine. Running the pipeline again will reproduce these files if you have access to the raw data.
 
 ---
 

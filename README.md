@@ -11,7 +11,7 @@ This repository contains my replication of key results from:
 
 ### Background and motivation
 
-HIV self-testing (HIVST) is a promising way to improve HIV testing uptake, especially among young Black/African American men who have sex with men (MSM), a group that continues to experience substantial disparities in HIV outcomes. Because many people in this population are reached more easily online than through traditional clinics, web-based advertising platforms have become an important tool for promoting HIVST. However, it is not obvious which types of platforms work best.
+HIV self-testing (HIVST) is a promising way to improve HIV testing uptake, especially among young Black/African American men who have sex with men, a group that continues to experience substantial disparities in HIV outcomes. Because many people in this population are reached more easily online than through traditional clinics, web-based advertising platforms have become an important tool for promoting HIVST. However, it is not obvious which types of platforms work best.
 
 This study asks a very practical question: among social media, dating apps, and search engines, which platforms are most effective at encouraging people to order HIV self-test kits?
 
@@ -31,7 +31,7 @@ I use the final, analysis-ready dataset downloaded from the NIDA Data Share page
 
 The file should be placed at:
 
-data/CTN_FINAL.csv
+`data/CTN_FINAL.csv`
 
 Variable definitions follow the official NIDA data dictionary (`CTN0083-Data-Dictionary.xlsx`), which is also available on the NIDA study page.
 
@@ -55,7 +55,7 @@ This results in an analytic sample of **N = 254**, with **177** participants ord
 
 I reproduced the descriptive table of sociodemographic and behavioral characteristics in:
 
-output/table1_replication.csv
+`output/table1_replication.csv`
 
 While building this table, I had to make several small but important data-handling decisions. In particular, race in this study is recorded as a multi-select variable (`Q5_3`). To match the manuscript:
 
@@ -108,7 +108,7 @@ When compared to the manuscript, the overall pattern of significant and non-sign
 
 I also included a simple figure that summarizes site-specific ordering rates by wave:
 
-figures/site_rates.png
+`figures/site_rates.png`
 
 ---
 
@@ -140,6 +140,8 @@ All outputs will be written to the output/ and figures/ folders.
 ---
 
 ## References
-•	Stafylis C, et al. Relative Effectiveness of Social Media, Dating Apps, and Information Search Sites in Promoting HIV Self-testing: Observational Cohort Study. JMIR Formative Research, 2022.
-•	NIDA Data Share: Study NIDA-CTN-0083 (dataset and data dictionary).
-•	R packages and documentation: emmeans, dplyr, readr, ggplot2
+- Stafylis C, et al. Relative Effectiveness of Social Media, Dating Apps, and Information Search Sites in Promoting HIV Self-testing: Observational Cohort Study. JMIR Formative Research, 2022.
+
+- NIDA Data Share: Study NIDA-CTN-0083 (dataset and data dictionary).
+
+- R packages and documentation: emmeans, dplyr, readr, ggplot2

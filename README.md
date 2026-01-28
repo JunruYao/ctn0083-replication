@@ -45,6 +45,7 @@ This repository is organized to mirror the logical flow of the replication, from
 
 The main components are:
 
+```text
 ctn0083_replication_repo/
 ├── R/
 │   ├── 01_load_clean.R        # Load the raw data and construct the analytic sample (N = 254)
@@ -65,7 +66,8 @@ ctn0083_replication_repo/
 │   ├── poisson_contrasts_wave2.csv
 │   └── secondary_results_appendix3.csv
 └── figures/                   # generated figure
-│   └── site_rates.png
+    └── site_rates.png
+```
 
 The analysis workflow is as follows. First, `01_load_clean.R` loads the dataset and constructs the analytic sample used in the manuscript. Then, `02_table1.R` produces the descriptive Table 1. Next, `03_primary_poisson.R` runs the main Poisson models and computes site-specific rates and contrasts. Finally, `04_secondary.R` reproduces all p-values reported in Appendix 3. The script `run_all.R` simply runs these steps in order and saves all generated tables and figures to the `output/` and `figures/` folders.
 

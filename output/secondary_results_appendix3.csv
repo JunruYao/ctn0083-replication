@@ -1,0 +1,34 @@
+appendix_section,outcome,test,p_value
+a,Alcohol,Fisher exact (Appendix 3a),0.07259489012508538
+a,Cannabis,Fisher exact (Appendix 3a),0.027393864406437894
+a,Opioid,Fisher exact (Appendix 3a),0.9999999999999999
+a,Prescribed stimulant,Fisher exact (Appendix 3a),1
+a,Sedative,Fisher exact (Appendix 3a),0.6870196936451864
+a,Stimulants,Fisher exact (Appendix 3a),0.7793589087667947
+b,Stage of Health Behavior Change (overall),Fisher exact (Appendix 3b),NA
+c,Getting tested for HIV helps people feel better,Wilcoxon rank-sum (Appendix 3c),0.15695614103712355
+c,Getting tested for HIV helps people from getting HIV,Wilcoxon rank-sum (Appendix 3c),0.8889946351668149
+c,I would rather not know if I have HIV,Wilcoxon rank-sum (Appendix 3c),0.40640323296050995
+c,People in my life would leave if I had HIV,Wilcoxon rank-sum (Appendix 3c),0.04971707802294067
+c,People who tested positive for HIV should hide it from others,Wilcoxon rank-sum (Appendix 3c),0.7199620559569158
+d,I am less threatened by the idea of being HIV positive than I used to be.,Wilcoxon rank-sum (Appendix 3d),0.6013236560795672
+d,I am less worried about HIV infection than I used to be,Wilcoxon rank-sum (Appendix 3d),0.6645943656958297
+d,I am much less concerned about becoming HIV positive myself because of new HIV/AIDS treatments,Wilcoxon rank-sum (Appendix 3d),0.3772201653394075
+d,I think HIV/AIDS is a less serious threat than it used to be because of new HIV/AIDS treatments,Wilcoxon rank-sum (Appendix 3d),0.31334175849821616
+d,I think HIV/AIDS is less of a problem than it used to be,Wilcoxon rank-sum (Appendix 3d),0.5859489189680936
+d,I think that condom use during sex is less necessary now that new HIV/AIDS treatments are available,Wilcoxon rank-sum (Appendix 3d),0.8771307674640825
+d,I think that new HIV/AIDS treatments can eradicate the virus from your body,Wilcoxon rank-sum (Appendix 3d),0.038566232418492497
+d,I think that someone who is HIV positive and uses new HIV/AIDS treatments can be cured,Wilcoxon rank-sum (Appendix 3d),0.23708910563790664
+d,I think that someone who is HIV positive now needs to care less about condom us,Wilcoxon rank-sum (Appendix 3d),0.055628562008492866
+d,"I think that the need for condom use is less than it used to be, because you can always start new treatments",Wilcoxon rank-sum (Appendix 3d),0.8080325584800471
+e,I could not be friends with someone who has HIV/AIDS,Wilcoxon rank-sum (Appendix 3e),0.0324817829202347
+e,I feel afraid of people living with HIV/AIDS,Wilcoxon rank-sum (Appendix 3e),0.6208361606729482
+e,I feel anger toward people with HIV/AIDS,Wilcoxon rank-sum (Appendix 3e),0.4290380799371209
+e,People who get HIV/AIDS through sex or drug use got what they deserve,Wilcoxon rank-sum (Appendix 3e),0.43028276514987984
+f,Health care organizations don’t always keep your information totally private.,Wilcoxon rank-sum (Appendix 3f),0.4318878765697809
+f,Health care organizations have sometimes done harmful experiments on patients without their knowledge.,Wilcoxon rank-sum (Appendix 3f),0.4133715962804524
+f,Mistakes are common in health care organizations.,Wilcoxon rank-sum (Appendix 3f),0.7402335248560368
+f,Patients have sometimes been deceived or misled by health care organizations.,Wilcoxon rank-sum (Appendix 3f),0.35128518275501147
+f,Sometimes I wonder if health care organizations really know what they are doing.,Wilcoxon rank-sum (Appendix 3f),0.8662634751001443
+f,When health care organizations make mistakes they usually cover it up.,Wilcoxon rank-sum (Appendix 3f),0.2708330265181881
+f,You'd better be cautious when dealing with healthcare organizations.,Wilcoxon rank-sum (Appendix 3f),0.6232910058674772

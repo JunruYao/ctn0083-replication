@@ -1,11 +1,5 @@
 data/
-*.csv
 .DS_Store
 .Rhistory
 .RData
 .Rproj.user
-output/*
-figures/*
-!output/.gitkeep
-!figures/.gitkeep
-!figures/site_rates.png

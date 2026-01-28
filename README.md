@@ -144,7 +144,7 @@ When compared to the manuscript, the overall pattern of significant and non-sign
 
 I also included a simple figure that summarizes site-specific ordering rates by wave:
 
-`figures/site_rates.png`
+![Site-specific ordering rates by wave](figures/site_rates.png)
 
 ---
 

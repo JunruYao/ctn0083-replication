@@ -8,3 +8,4 @@ output/*
 figures/*
 !output/.gitkeep
 !figures/.gitkeep
+!figures/site_rates.png

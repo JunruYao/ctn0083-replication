@@ -1,8 +1,10 @@
 data/
 *.csv
-output/
-figures/
 .DS_Store
 .Rhistory
 .RData
 .Rproj.user
+output/*
+figures/*
+!output/.gitkeep
+!figures/.gitkeep
